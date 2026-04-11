@@ -8,3 +8,5 @@
 | **JavaScript** | [MDN Web Docs](https://developer.mozilla.org/es/docs/Web/JavaScript) | Fetch API y manipulación del DOM. |
 | **Bootstrap 5** | [Doc Oficial](https://getbootstrap.com/) | Descarga |
 | **Bootstrap 5** | [W3Schools BS5](https://www.w3schools.com/bootstrap5/) | Grillas y componentes. |
+
+| **Iconos** | [FontAwesome](https://fontawesome.com/) | Iconos  Vers 5.15.4|
