@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.seccion-uno{
+    background-color: lightskyblue;
+}
+.contenedor-personas{
+    background-color: lightgray;
+    height: 100%;
+}
+.imagen-larga{
+    background-color: grey;
+    height: 80px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
