@@ -1,0 +1,26 @@
+.nav-link {
+    --bs-nav-underline-border-width: 0.25rem;
+    --bs-nav-link-color: rgb(83, 83, 83);
+}
+
+.nav-underline .nav-link.active,
+.nav-underline .show>.nav-link {
+    border-bottom-color: #377bc6;
+    --bs-nav-underline-link-active-color: rgb(83, 83, 83);
+    font-weight: 400;
+}
+
+.bg-heading {
+    background-color: #e3f2fd;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.bg-button {
+    background-color: #377bc6;
+    color: white;
+}
+
+.bg-cards {
+    background-color: #eff0f4;
+}
