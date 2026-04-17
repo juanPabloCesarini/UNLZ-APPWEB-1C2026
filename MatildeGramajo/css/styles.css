@@ -24,3 +24,22 @@
 .bg-cards {
     background-color: #eff0f4;
 }
+
+.bg-image {
+    background-color: #c6cad3;
+    color: #f7f7f9;
+}
+
+.bg-suscribe {
+    background-color: #e9963a;
+}
+
+.bg-footer {
+    background-color: #4b6283;
+    color: white;
+}
+
+.bg-icons {
+    background-color: #5e83b9;
+    width: 32px;
+}
