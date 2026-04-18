@@ -1,0 +1,35 @@
+body {
+    background-color: #1a1a1a; /* negro */
+    color: #f1e8fa; /* lila claro */
+}
+
+.navbar-custom {
+    background-color: #a886e6; /* lila */
+}
+
+.section-lila {
+    background-color: #a886e6;
+    color: white;
+}
+
+.card-custom {
+    background-color: #2a2a2a;
+    color: #e6ccff;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.boton-lila {
+    background-color: #a886e6;
+    color: white;
+    border: none;
+}
+
+.boton-lila:hover {
+    background-color: #5a32a3;
+}
+
+.footer {
+    background-color: black;
+    color: #e6ccff;
+}
