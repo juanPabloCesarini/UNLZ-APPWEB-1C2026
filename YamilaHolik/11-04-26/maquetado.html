@@ -7,6 +7,7 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -36,27 +37,31 @@
 
             </nav>
             <!-- FIN ZONA NAVBAR -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 ps-4 pt-5 pb-5 pe-5 bg-primary text-white text-start">
+                        <h1>Heading goes here</h1>
+                        <p>
+                            A header subtle text here.
+                            <br>
+                            Text content.
+                        </p>
+                        <button type="button" class="btn btn-warning">Button</button>
 
-            <div class="col-md-6 ps-3 pt-5 pb-5 pe-5 bg-primary text-white text-start">
-                <h1>Header goes here</h1>
-                <p>A header subtle fext here.<br>
-                    Text content fext.
-                </p>
-                <button type="button" class="btn btn-warning">Button</button>
-
+                    </div>
+                </div>
             </div>
-
     </header>
 
-    <div class="card-body py-3 px-0">
+    <div class="card-body p-2">
         <main>
             <!-- ZONA CARDS -->
 
             <section class="text-center p-3 ">
-                <div class="container p-3">
+                <div class="container-fluid p-3">
                     <div class="row g-3">
 
-                        <div class="col col-4 text-white">
+                        <div class="col col-md-3 text-white">
                             <div class="card">
                                 <div class="card-body">
                                     <img src="..." class="card-img w-25 mx-auto" alt="Imagen">
@@ -66,7 +71,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-4 text-white">
+                        <div class="col col-md-3 text-white">
                             <div class="card">
                                 <div class="card-body">
                                     <img src="..." class="card-img w-25 mx-auto" alt="Imagen">
@@ -76,7 +81,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-4 text-white">
+                        <div class="col col-md-3 text-white">
                             <div class="card">
                                 <div class="card-body">
                                     <img src="..." class="card-img w-25 mx-auto" alt="Imagen">
@@ -91,7 +96,7 @@
             </section>
 
             <!-- ZONA IMAGEN LARGA -->
-            <div class="container p-4 bg-dark">
+            <div class="container-fluid p-4 bg-dark">
                 <div class="row bg-secondary">
                     <div class="col">
                         <img src="..." class="img-fluid" alt="ACA VA UNA IMAGEN LARGA">
@@ -100,14 +105,14 @@
             </div>
 
             <!-- ZONA SECTION TITLE -->
-            <section class="pt-3 px-3">
-                <div class="container">
+            <section>
+                <div class="container-fluid pt-3 pt-3 pb-5">
                     <div class="row">
                         <div class="col">
                             <h2>Section title</h2>
                         </div>
                     </div>
-                    
+
                     <div class="row g-3">
                         <div class="col col-6">
                             <hr class="mt-0">
@@ -127,18 +132,26 @@
     </div>
 
     <!-- ZONA FOOTER -->
-     <footer>        
-    <div class="card-footer">
+    <footer class="py-3">
 
-        Footer
+        <div class="container-fluid bg-secondary text-center">
 
-    </div>
-</footer>
+            <div class="d-flex flex-row-reverse">
+                <div class="p-2"><i class="bi bi-dash-lg fs-3"></i></div>
+
+                <div class="p-2"><i class="bi bi-dash-lg fs-3"></i></div>
+
+                <div class="p-2"><i class="bi bi-facebook fs-3"></div>
+
+                <div class="p-2"><i class="bi bi-twitter fs-3"></div>
+
+                <div class="p-2"><i class="bi bi-envelope-fill fs-3"></div>
+            </div>
 
 
+    </footer>
 
 
-    </div>
     <!--ZONA SCRIPTS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
