@@ -178,3 +178,9 @@ aside {
     display: flex;
     justify-content: center;
 }
+
+.nombre{
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
