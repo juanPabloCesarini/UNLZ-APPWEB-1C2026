@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1a1a1a;
+    color: #f5f5f5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #ff4d4d;
+    text-align: center;
+}
+
+.title span {
+    color: #ffffff;
+}
+
+.subtitle {
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+/*pokeball*/
+.title-container img {
+    display: block;
+    margin: 0 auto 15px;
+    width: 90px;
+}
+
+/*input*/
+.inputContainer {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 420px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+/*botón*/
+button {
+    padding: 12px 18px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #e60000;
+}
+
+/*card*/
+.card {
+    background: #ffffff;
+    color: #222;
+    padding: 18px;
+    margin-top: 8px;
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+    max-width: 380px;
+
+    border: 2px solid #ff4d4d;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card h2 {
+    text-transform: capitalize;
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+}
+
+/*imagen*/
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.pokemon-img {
+    width: 180px;
+}
+
+/*error*/
+.error {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.error img {
+    width: 100px;
+}
+
+/*loader*/
+.loader {
+    margin-top: 20px;
+    border: 4px solid #ccc;
+    border-top: 4px solid #ff4d4d;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+/*animacion*/
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*hovercard*/
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.8),
+                0 0 12px rgba(255, 77, 77, 0.6);
+}
+
+/*responsive*/
+@media (max-width: 500px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .inputContainer {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .card {
+        max-width: 90%;
+        padding: 18px;
+    }
+
+    .pokemon-img {
+        width: 140px;
+    }
+}
