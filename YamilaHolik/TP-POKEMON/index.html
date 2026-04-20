@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokebuscador</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid text-center">
+        <header>
+            <h1>PokeBuscador</h1>
+            <p class="subtitle">Tu enciclopedia visual Pokémon. <br>
+                Escribe el nombre de tu compañero favorito y <br>
+                descubre su apariencia al instante</p>
+        </header>
+
+        <main>
+            <div class="container-fluid">
+
+                <!-- SEARCH BOX POKEMON -->
+                <div class="search-box">
+                    <input type="text" id="search" placeholder="Nombre del Pokémon..." autofocus>
+                    <button id="btnBuscar">Buscar Pokémon ◓</button>
+                </div>
+
+                <!-- LOADER POKEMON -->
+                <div id="loader" class="loader hidden">
+                    <div class="spinner"></div>
+                    <span>Buscando Pokémon...</span>
+                </div>
+
+                <!-- POKEMON RESULTS -->
+                <div id="result" class="pokemon-display"></div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <p>Holik Yamila | Clase de Aplicaciones Web Prof. Cesarini, Juan Pablo</p>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
