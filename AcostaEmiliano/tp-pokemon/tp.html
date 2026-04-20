@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio JS Avanzado - UNLZ</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h1>Laboratorio: Pokémon Efímero</h1>
+            <p class="subtitle">Aprendiendo Async/Await, DOM y Modularización</p>
+        </header>
+
+        <main class="card">
+            <div class="instrucciones">
+                <p><strong>Tarea: Entrega límite 23-04-2026 16:00 hs</strong>
+                    <ul>
+                        <li>Busca un Pokémon.</li>
+                        <li>Mostrar error si se hace una búsqueda vacia.</li>
+                        <li>Deberá aparecer con 2s de delay.</li>
+                        <li>Desaparecer automáticamente a los 5s.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="search-box">
+                <input type="text" id="busqueda" placeholder="Nombre del Pokémon..." autofocus>
+                <button id="btnBuscar">Lanzar Pokéball ◓</button>
+            </div>
+
+            <div id="loader" class="loader hidden">
+                <div class="spinner"></div>
+                <span>Conectando con la PokéAPI...</span>
+            </div>
+
+            <div id="resultado" class="pokemon-display"></div>
+        </main>
+
+        <footer>
+            <p>Clase de Aplicaciones Web | Prof. Juan Pablo Cesarini</p>
+        </footer>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
