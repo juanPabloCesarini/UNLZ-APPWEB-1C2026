@@ -9,7 +9,7 @@ export const renderPoke = (data) => {
 
     //innerHTML: limpia lo que haya dentro del contenedor y lo reemplaza
     container.innerHTML = `
-    <h3>${data.name.toUpperCase()}</h3>
+    <h2>${data.name.toUpperCase()}</h2>
     <img src="${data.sprites.front_default}" alt="${data.name.toUpperCase()}">    
     `;
 };

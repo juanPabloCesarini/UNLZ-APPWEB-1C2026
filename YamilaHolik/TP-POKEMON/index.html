@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokebuscador</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Roboto+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css">
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="container-fluid text-center">
+    <div id="app" class="app">
         <header>
             <h1>PokeBuscador</h1>
             <p class="subtitle">Tu enciclopedia visual Pokémon <br>
@@ -21,7 +21,17 @@
         </header>
 
         <main>
-            <div class="container-fluid">
+
+            <!-- POKEMON RESULTS -->
+            <div id="result" class="pokemon-display"></div>
+
+            <!-- LOADER POKEMON -->
+            <div id="loader" class="loader hidden">
+                <div class="spinner"></div>
+                <span>Buscando Pokémon...</span>
+            </div>
+
+            <div id="principal-container" class="principal-container">
 
                 <!-- SEARCH BOX POKEMON -->
                 <div class="search-box">
@@ -29,15 +39,9 @@
                     <button id="btnSearch">Buscar Pokémon ◓</button>
                 </div>
 
-                <!-- LOADER POKEMON -->
-                <div id="loader" class="loader hidden">
-                    <div class="spinner"></div>
-                    <span>Buscando Pokémon...</span>
-                </div>
-
-                <!-- POKEMON RESULTS -->
-                <div id="result" class="pokemon-display"></div>
             </div>
+
+
         </main>
 
         <footer>
@@ -45,14 +49,11 @@
                 <p>Holik Yamila | Clase de Aplicaciones Web Prof. Cesarini, Juan Pablo</p>
             </div>
         </footer>
-    </div>
+
     </div>
 
+    <script type="module" src="./js/main.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-        <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>

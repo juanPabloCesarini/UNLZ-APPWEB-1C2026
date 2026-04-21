@@ -1,0 +1,150 @@
+:root {
+    /* Colores de Identidad (Brand) */
+    --poke-red: #EF4444;
+    /* Rojo principal (Pokébola) */
+    --poke-red-dark: #B91C1C;
+    /* Rojo para hover o estados activos */
+    --poke-yellow: #FACC15;
+    /* Amarillo para detalles o loader */
+    --poke-blue: #3B82F6;
+    /* Azul tecnológico para el loader o enlaces */
+
+    /* Neutros y Estructura */
+    --bg-main: #F8FAFC;
+    /* Fondo general de la página (Slate 50) */
+    --bg-card: #eecbcbe2;
+    /* Fondo de la tarjeta y el input */
+    --border-color: rgba(203, 213, 225, 0.933);
+    /* Color de bordes y separadores */
+    --text-main: #1E293B;
+    /* Texto principal (Azul muy oscuro) */
+    --text-muted: #64748B;
+    /* Texto secundario o descripciones */
+
+    /* Estados de la Interfaz (UI) */
+    --success: #22C55E;
+    /* Para mensajes positivos */
+    --error-bg: #FEF2F2;
+    /* Fondo suave para el mensaje de error */
+    --error-text: #991B1B;
+    /* Texto crítico de error */
+    --shadow: rgba(0, 0, 0, 0.1);
+    /* Sombra suave para elevación de tarjetas */
+
+    /* Fuentes */
+    --font-titles: 'Outfit', sans-serif;
+    --font-data: 'Roboto Mono', monospace;
+}
+
+body {
+    font-family: var(--font-titles);
+    background-color: var(--bg-main);
+
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+header {
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 25px;
+    text-align: center;
+    background-color: var(--shadow);
+    border-radius: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--poke-red);
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-height: max-content;
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+.pokemon-display {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.pokemon-display img {
+    width: 100px;
+    height: 100px;
+    background-color: var(--bg-card);
+    border: 5px solid var(--border-color);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.principal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+/* Elementos ocultos: necesario para ocultar el loader */
+.hidden {
+    display: none;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+
+/*--------- Spinner ---------*/
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid var(--border-color);
+    border-top: 5px solid var(--poke-red);
+    border-radius: 50%;
+    /* Esto lo hace circular */
+
+    /* Efecto de la animacion */
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+/* Animacion de rotacion */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
