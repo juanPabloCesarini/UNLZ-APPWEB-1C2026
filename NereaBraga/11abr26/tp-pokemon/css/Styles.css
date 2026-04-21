@@ -1,0 +1,213 @@
+:root {
+/*colores principales*/
+  --bg-color: #2a194f;
+  --card-bg: #9241a2;
+  --text-color: #f1f5f9;
+  --accent-color: #08010f;
+  --accent-hover: #eab308;
+  --error-color: #551111;
+
+
+}
+
+body {
+/*cuerpo principal*/
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-height: 100vh;
+
+
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+
+}
+
+.subtitule{
+/*subtexto*/
+    color: white;
+    font-size: 19px;
+    margin-top: 2px;
+}
+
+
+header {
+
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+/*titulo*/
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--card-bg);
+    margin-bottom: 0.5rem;
+
+}
+
+.search-card {
+
+    text-align: center;
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 500px;
+
+}
+
+.form-group {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+input {
+
+    flex: 1;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    background-color: darkslategrey;
+    color: var(--text-color);
+    font-size: 1rem;
+
+}
+
+input:focus {
+
+    outline: none;
+    border-color: var(--accent-color);
+
+}
+
+button {
+
+    padding: 0 20px;
+    background-color: var(--accent-color);
+    color: #1a1f24;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    transition: all 0.3s ease;
+
+}
+
+button:hover {
+
+    background-color: var(--accent-hover);
+    transform: scale(1.05);
+
+}
+
+.loader {
+
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-color);
+    margin: 1rem 0;
+   
+
+}
+
+.hidden {
+/*borra el buscando en la API, hace que sea invisible*/
+    display: none;
+
+}
+
+.resultado-container {
+
+    text-align: center;
+    margin-top: 1rem;
+
+}
+
+.resultado-container img {
+
+    width: 150px;
+    height: 150px;
+    background-color: #1a1f24;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.resultado-container h3 {
+
+    margin-top: 1rem;
+    color: beige;
+
+}
+
+.error {
+
+    text-align: center;
+    font-weight: bold;
+    color: var(--error-color);
+    background-color: rgba(255, 107, 107, 0.1);
+    padding: 10px;
+    border-radius: 6px;
+
+}
+
+.btn-tp:hover {
+
+    background-color: brown;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+
+}
+
+/*efecto al hacer el click*/
+.btn-tp:active {
+
+    transform: translateY(0);
+}
+
+/*efecto que adapta el tp a la pantalla de un celular*/
+@media (max-width: 600px) {
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .search-card {
+        width: 90%;
+    }
+
+    .resultado-container img {
+        width: 120px;
+        height: 120px;
+    }
+}
