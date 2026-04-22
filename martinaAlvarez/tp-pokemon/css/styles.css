@@ -1,0 +1,90 @@
+body {
+    background: #21253a;
+    color: #dbcb3b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+    flex: 1;
+
+}
+
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.pokebola-deco {
+    width: 150px;
+}
+
+.search-card {
+    background: #2a2f4a;
+    padding: 15px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 180px;
+    padding: 10px;
+    border: none;
+    outline: none;
+
+    border-radius: 8px;
+}
+
+.search-box input:focus {
+    box-shadow: 0 0 0 2px #dbcb3b;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    background-color: #dbcb3b;
+    color: #21253a;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer {
+    color: rgb(100, 101, 101);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.loader-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.pokebola-busqueda {
+    width: 18px;
+}
