@@ -1,4 +1,4 @@
-import { fetchPokemonConDelay } from "./api/pokemon_delay.js";
+import { fetchPokemonConDelay} from "./api/pokemon_delay.js";
 import { renderPokemon, renderError, toggleLoader } from "./dom/ui.js";
 
 const btnBuscar = document.querySelector("#btnBuscar");
@@ -12,7 +12,7 @@ btnBuscar.addEventListener("click", async () => {
 
   try {
     // Usamos la versión con delay artificial
-    const data = await fetchPokemonConDelay(query, 2000);
+    const data = await fetchPokemonConDelay(query);
     renderPokemon(data);
   } catch (error) {
     renderError(error.message);

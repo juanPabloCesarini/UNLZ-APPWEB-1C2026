@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>>Buscador de Pokémon Efímero</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h1>Buscador de Pokémon Efímero</h1>
+        </header>
+
+        <div class="search-card">
+            <div class="form-group">
+                <input type="text" id="busqueda" placeholder="Ej: pikachu, ditto, charizard..." />
+                <button id="btnBuscar">Buscar</button>
+            </div>
+
+            <div id="loader" class="loader hidden">Buscando en la API... ⏳</div>
+            <div id="resultado" class="resultado-container"></div>
+        </div>
+    </main>
+
+    <!-- Cuando trabajamos con js modular, no olvidar el type="module" -->
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
