@@ -13,6 +13,7 @@ const inputSearch = document.querySelector("#search");
 
 // Agrego el evento de click al botón
 btnSearch.addEventListener("click", async () => {
+    clearResult(); // Cada vez que hace click limpia el resultado anterior
 
     console.log("Buscando Pokémon..."); // Para ver por consola que se hizo click
 
@@ -33,13 +34,14 @@ btnSearch.addEventListener("click", async () => {
     try {
         const data = await fetchPokemonWithDelay(query, 2000);
         renderPoke(data);
+        inputSearch.value = "";
 
-        //Programo un timeout para limpiar el resultado después de 5 segundos
-        setTimeout(() => {clearResult();}, 5000);
+        // Programo un timeout para limpiar el resultado después de 5 segundos
+        setTimeout(() => { clearResult(); }, 5000);
 
     } catch (error) {
         renderError(error.message);
-        setTimeout(() => {clearResult();}, 5000);
+        setTimeout(() => { clearResult(); }, 5000);
 
     } finally {
 
