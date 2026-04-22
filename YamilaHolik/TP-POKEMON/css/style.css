@@ -60,7 +60,11 @@ main {
 .pokemon-display {
 display: flex;
 flex-direction: column;
+flex-grow: 1;
 align-items: center;
+align-content: center;
+justify-content: center;
+width: 100%;
 }
 
 .pokemon-display img {
@@ -81,12 +85,7 @@ align-items: center;
     margin-top: auto;
 }
 
-.error {    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: auto;
+.error {        
     background-color: rgb(239, 68, 68, 0.3);
     border: 2px solid var(--poke-red-ultradark);
     border-radius: 15px;
