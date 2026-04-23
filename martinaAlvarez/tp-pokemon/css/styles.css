@@ -9,7 +9,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 40px;
+    padding-top: 60px;
     flex: 1;
 
 }
@@ -28,16 +28,18 @@ main {
 
 .pokebola-deco {
     width: 150px;
+    animation: glow 3s ease-in-out infinite;
 }
 
 .search-card {
     background: #2a2f4a;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+    justify-content: center;
 }
 
 .search-box {
@@ -52,7 +54,6 @@ main {
     padding: 10px;
     border: none;
     outline: none;
-
     border-radius: 8px;
 }
 
@@ -87,4 +88,52 @@ main {
 
 .pokebola-busqueda {
     width: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+.resultado-container {
+    background: #d6e27b;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    color: black;
+}
+
+.respuestaApiError {
+    color: rgb(139, 10, 10);
+    font-weight: bold;
+}
+
+
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 3px rgba(255, 215, 0, 0.3));
+    }
+    50% {
+        filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.7));
+    }
+    100% {
+        filter: drop-shadow(0 0 3px rgba(255, 215, 0, 0.3));
+    }
+}
+
+.pokemon-img {
+    width: 200px;
+}
+
+.pokemon-name {
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+.respuestaApiError {
+    background-color: #ffe5e5;
+    padding: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 1px solid #ff9999;
+    margin: 0 0px;
 }
