@@ -1,0 +1,102 @@
+.fondo-app {
+  background-color: #101722;
+}
+
+.contenedor-laboratorio {
+  max-width: 760px;
+}
+
+.subtitulo {
+  font-size: 1rem;
+}
+
+.panel-buscador {
+  max-width: 760px;
+  background-color: #2a313d;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.input-pokemon {
+  min-height: 56px;
+  background-color: #182132;
+  color: #ffffff;
+  border: 1px solid #3f4b61;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+}
+
+.input-pokemon::placeholder {
+  color: #a9b4c7;
+}
+
+.input-pokemon:focus {
+  background-color: #182132;
+  color: #ffffff;
+  border-color: #dc3545;
+  box-shadow: none;
+}
+
+.boton-pokeball {
+  min-height: 56px;
+  min-width: 150px;
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.2rem;
+}
+
+.boton-pokeball:hover {
+  background-color: #bb2d3b;
+  color: #ffffff;
+}
+
+.boton-pokeball:focus,
+.boton-pokeball:active {
+  background-color: #bb2d3b !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.texto-ejemplos {
+  font-size: 0.98rem;
+}
+
+.texto-loader {
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.tarjeta-pokemon {
+  padding-top: 0.5rem;
+}
+
+.circulo-imagen {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: #1b2230;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-pokemon {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+}
+
+.nombre-pokemon {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.texto-resultado {
+  min-height: 24px;
+  color: #ffffff;
+  font-size: 1rem;
+}
