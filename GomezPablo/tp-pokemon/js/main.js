@@ -36,6 +36,8 @@ button.addEventListener('click', async () => {
 
 })
 
+/* probando commit */
+
 function drawErrorMessage(error) {
      app.innerHTML = errorMessage(error);
 }
