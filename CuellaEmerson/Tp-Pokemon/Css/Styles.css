@@ -5,6 +5,13 @@
 .mi-caja {/* para que se centre y no sea tan grande el boton y eso */
   width: 500px;
 }
-
+body {
+  background: #85cc9f !important;
+}
+.color-boton{
+  background-color: #44fc88 !important;
+  color: black !important;
+  border: #44fc88 !important;
+}
 
 /* */
