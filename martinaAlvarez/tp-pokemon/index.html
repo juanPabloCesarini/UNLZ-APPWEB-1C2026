@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TP Pokemon</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+        <header class="header">
+            <h1>Buscador de pokemon</h1>
+            <img src="img/pokebola.png" class="pokebola-deco" alt="pokebola">
+        </header>
+        <main class="main">
+            <div class="search-card">
+                <div class="search-box">
+                    <input placeholder="Ingresa el nombre..." type="text" id="pokemonInput" autofocus />
+                    <button id="btnBuscar">Buscar</button>
+                </div>
+                <div class="loader-wrapper hidden">
+                    <div id="loader" class="loader">Buscando pokemon...</div>
+                    <img src="img/pokebola.png" class="pokebola-busqueda" alt="pokebola">
+                </div>
+                <div id="resultado" class="resultado-container"></div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Trabajo Practico Pokemon - Martina Alvarez</p>
+        </footer>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>
