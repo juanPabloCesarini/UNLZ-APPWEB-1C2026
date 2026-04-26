@@ -10,10 +10,18 @@ boton.addEventListener("click", async () => {
     let nombre = input.value;
 
     if (nombre === "") {
-        resultado.innerHTML = mostrarError("este campo se encuentra vacio");
+
+        setTimeout(() => {
+            resultado.innerHTML = mostrarError("este campo se encuentra vacio");
+
+            setTimeout(() => {
+                resultado.innerHTML = "";
+            }, 5000);
+
+        }, 2000);
+
         return;
     }
-
     resultado.innerHTML = "";
 
     try {
@@ -29,5 +37,10 @@ boton.addEventListener("click", async () => {
 
     } catch (error) {
         resultado.innerHTML = mostrarError(error);
+
+        setTimeout(() => {
+            resultado.innerHTML = "";
+        }, 5000);
     }
+
 });
