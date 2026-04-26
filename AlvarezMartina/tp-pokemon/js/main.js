@@ -31,6 +31,9 @@ function buscarPokemon(nombre) {
             ocultarCarga(loader);
             mostrarError(resultado, error.message);
             limpiarInput(input);
+            timeoutLimpiar = setTimeout(() => {
+                limpiarResultado(resultado);
+            }, 5000);
         }
     }, 2000);
 }
@@ -40,6 +43,9 @@ boton.addEventListener("click", () => {
 
     if (nombre === "") {
         mostrarError(resultado, "Ingrese un Pokemon!");
+        timeoutLimpiar = setTimeout(() => {
+                limpiarResultado(resultado);
+            }, 5000);
         return;
     }
 
