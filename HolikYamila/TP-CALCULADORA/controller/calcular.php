@@ -1,10 +1,28 @@
 <?php
+require_once 'capturar_datos.php';
+$opMsg = ""; 
 
-$num1 = $_POST['num1'];
-$num2 = $_POST['num2'];
+switch ($opType) {
+    case "sumar" :
+        $opMsg = "suma";
+        require_once 'sumar.php';
+        break;
 
-$result = $num1 + $num2;
+        case "restar":
+            $opMsg = "resta";
+            require_once 'restar.php';
+            break;
 
-require_once './view/view_result.php';
+            case "dividir" :
+                $opMsg = "división";
+                require_once 'dividir.php';
+            break;
+
+            case "multiplicar" :
+                $opMsg = "multiplicación";
+                require_once 'multiplicar.php';
+                break;
+
+}
 
 ?>
