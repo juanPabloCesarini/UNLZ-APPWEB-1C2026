@@ -6,20 +6,23 @@ $operacion = $_POST["operacion"];
 
 $resultado = "";
 
-if ($operacion == "+" ) {
-    $resultado = $numero1 + $numero2;
-}
-
-if ($operacion == "-" ) {
-    $resultado = $numero1 - $numero2;
-}
-
-if ($operacion == "*" ) {
-    $resultado = $numero1 * $numero2;
-}
-
-if ($operacion == "/" ) {
-    $resultado = $numero1 / $numero2;
+switch ($operacion) {
+    case '+':
+        $resultado = $numero1 + $numero2;
+        break;
+    case '-':
+        $resultado = $numero1 - $numero2;
+        break;    
+    case '*':
+        $resultado = $numero1 * $numero2;
+        break;
+    case '/':
+        if ($numero2 == 0) {
+        $resultado = "No es posible dividir por 0";
+    } else {
+        $resultado = $numero1 / $numero2;
+    }
+        break;    
 }
    
     require_once '../View/vista_resultado.php';
