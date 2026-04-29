@@ -2,7 +2,7 @@
 require_once 'capturar_datos.php';
 require_once 'validador.php';
 
-$opMsg = ""; 
+$opMsg = "";
 
 switch ($opType) {
     case "sumar" :

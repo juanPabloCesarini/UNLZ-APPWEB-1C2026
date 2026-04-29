@@ -7,10 +7,11 @@ include_once '../view/layout/header.php';
 include_once 'view_calculadora.php';
 ?>
 
+
 <div class="card">
     <div class="card-header">
         <h3>
-           <?php echo "La " . $opMsg . " entre " . $num1 . " y " . $num2 . " es: " . $result?>
+           <?php echo $result?>
          </h3>
     </div>
 </div>
