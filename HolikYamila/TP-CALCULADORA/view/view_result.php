@@ -11,7 +11,7 @@ include_once 'view_calculadora.php';
 <div class="card">
     <div class="card-header">
         <h3>
-           <?php echo $result?>
+           <?php echo "La " . $opMsg . " entre " . $num1 . " y " . $num2 . " es: " . $result?>
          </h3>
     </div>
 </div>
