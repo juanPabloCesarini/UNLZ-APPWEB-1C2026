@@ -1,5 +1,7 @@
 <?php
 require_once 'capturar_datos.php';
+require_once 'validador.php';
+
 $opMsg = ""; 
 
 switch ($opType) {

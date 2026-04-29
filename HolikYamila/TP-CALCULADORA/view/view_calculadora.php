@@ -1,16 +1,8 @@
-<?php
-$title = " Calculadora - PHP";
-include_once './view/layout/header.php';
-?>
-
-<!-- Contenedor principal de la aplicación -->
 <div class="container-app">
 
-    <!-- Contenedor del formulario de entrada de números -->
     <div class="input-calculator-container">
 
-        <!-- Formulario para ingresar los números a sumar -->
-        <form action="./controller/validador.php" method="post">
+        <form action="\UNLZ-APPWEB-1C2026\HolikYamila\TP-CALCULADORA\controller\calcular.php" method="post">
 
             <input type="number" class="form-control" id="num1" name="num1" placeholder="Primer número">
             <input type="number" class="form-control" id="num2" name="num2" placeholder="Segundo número">
@@ -26,8 +18,5 @@ include_once './view/layout/header.php';
     </div>
     
 </div>
-
-
-
 
 <? include_once './view/layout/footer.php' ?>

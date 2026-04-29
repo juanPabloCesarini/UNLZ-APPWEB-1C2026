@@ -3,6 +3,10 @@ $title = "Resultado - Calculadora PHP";
 include_once '../view/layout/header.php';
 ?>
 
+<?php
+include_once 'view_calculadora.php';
+?>
+
 <div class="card">
     <div class="card-header">
         <h3>

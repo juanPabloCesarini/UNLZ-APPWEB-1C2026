@@ -1,5 +1,5 @@
 <?php
-require_once 'capturar_datos.php';
+require_once './capturar_datos.php';
 
 if($num1 == "" && $num2 == "") {
     echo "Error: los campos estan vacíos";
