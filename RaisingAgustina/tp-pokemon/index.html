@@ -2,8 +2,12 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>PokéApp</title>
+    <title>PokeApp</title>
+
+    <!--conecto los estilos -->
     <link rel="stylesheet" href="./css/styles.css">
+
+    <!--icono de la pestaña -->
     <link rel="icon" href="./img/icon.png" type="image/png">
 </head>
 <body>
@@ -13,18 +17,24 @@
     <div class="title-container">
         <img src="./img/pokeball.png" width="100">
         <h1 class="title">Poke<span>App</span></h1>
-        <p class="subtitle">Buscá a tu Pokémon favorito</p>
+        <p class="subtitle">Busca tu pokemon favorito</p>
     </div>
 
     <div class="inputContainer">
         <input type="text" id="inputQuery" placeholder="pikachu...">
-        <button id="buttonQuery">Lanzar Pokéball 🔴</button>
+        <button id="buttonQuery">Buscar</button>
     </div>
 
+    <!--loader muestra cuando carga -->
+    <div id="loader" class="loader hidden"></div>
+
+    <!--aca muestra el pokemon -->
     <div id="app"></div>
 
 </main>
 
+<!--type module permite usar import/export-->
 <script type="module" src="./js/main.js"></script>
+
 </body>
 </html>

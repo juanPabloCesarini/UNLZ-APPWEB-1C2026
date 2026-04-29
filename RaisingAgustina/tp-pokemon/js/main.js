@@ -1,33 +1,56 @@
 import { getPokemon } from "./api/api.js";
-import { drawCard } from "../components/ui/card.js";
-import { errorMessage } from "../components/ui/errorMessage.js";
-import { loader } from "../components/ui/loader.js";
+import { renderPokemon, renderError, showLoader, clearApp } from "./dom/ui.js";
 
-const app = document.querySelector("#app");
-const button = document.querySelector("#buttonQuery");
-const input = document.querySelector("#inputQuery");
+//traigo los elementos del html
+const input = document.getElementById("inputQuery");
+const button = document.getElementById("buttonQuery");
+
 
 button.addEventListener("click", async () => {
-    const name = input.value.toLowerCase().trim();
 
-    if (!name) {
-        app.innerHTML = errorMessage("Escribí un Pokémon");
+    console.log("Buscando pokemon...");
+
+    const name = input.value.trim();
+
+    //valido
+    if (name === "") {
+        renderError("La busqueda no debe estar vacia.");
         return;
     }
 
-    app.innerHTML = loader();
+    //muestro loader y limpio pantalla
+    showLoader(true);
+    clearApp();
 
-    setTimeout(async () => {
-        try {
-            const pokemon = await getPokemon(name);
-            app.innerHTML = drawCard(pokemon);
+    try {
+        //creo delay de 2 segundos
+        const delay = new Promise(resolve => setTimeout(resolve, 2000));
 
-            setTimeout(() => {
-                app.innerHTML = "";
-            }, 5000);
+     
+        const [pokemon] = await Promise.all([
+            getPokemon(name),
+            delay
+        ]);
 
-        } catch (e) {
-            app.innerHTML = errorMessage("No encontrado");
-        }
-    }, 2000);
+        //muestro pokemon
+        renderPokemon(pokemon);
+
+        //limpio 
+        input.value = "";
+
+        //borro resultado a los 5 segundos
+        setTimeout(() => {
+            clearApp();
+        }, 5000);
+
+    } catch (error) {
+        //si hay error lo muestro
+        renderError(error.message);
+
+        setTimeout(() => {
+            clearApp();
+        }, 5000);
+    }finally{
+        //oculto loader
+        showLoader(false);}
 });
