@@ -20,11 +20,39 @@ export function mostrarPokemon(data) {
     limpiarSalida();
   }, 5000);
 }
-export function mostrarError(mensaje) {
+
+export function mostrarMensaje(mensaje) {
+  clearTimeout(temporizadorOcultar);
+
   tarjetaPokemon.classList.add("d-none");
   imagenPokemon.src = "";
+  imagenPokemon.alt = "Imagen del Pokémon encontrado";
   nombrePokemon.textContent = "";
+
   resultado.textContent = mensaje;
+
+  temporizadorOcultar = setTimeout(() => {
+    limpiarSalida();
+  }, 5000);
+}
+
+export function renderError(mensaje) {
+  clearTimeout(temporizadorOcultar);
+
+  tarjetaPokemon.classList.add("d-none");
+  imagenPokemon.src = "";
+  imagenPokemon.alt = "Imagen del Pokémon encontrado";
+  nombrePokemon.textContent = "";
+
+  resultado.innerHTML = `
+    <div class="error">⚠️ ${mensaje}</div>
+  `;
+
+  alert(mensaje);
+
+  temporizadorOcultar = setTimeout(() => {
+    limpiarSalida();
+  }, 5000);
 }
 
 export function toggleLoader(estado) {
@@ -37,7 +65,7 @@ export function toggleLoader(estado) {
   }
 }
 
-function limpiarSalida() {
+export function limpiarSalida() {
   tarjetaPokemon.classList.add("d-none");
   imagenPokemon.src = "";
   imagenPokemon.alt = "Imagen del Pokémon encontrado";
