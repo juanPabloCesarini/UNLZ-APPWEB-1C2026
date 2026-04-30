@@ -1,0 +1,186 @@
+:root {
+    --bg-color: #1a1f24;
+    --card-bg: #2d333b;
+    --text-color: #adbac7;
+    --accent-color: #00e6bf;
+    --accent-hover: #00b395;
+    --error-color: #ff6b6b;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;    
+    gap: 20px;              
+    min-height: 100vh;
+}
+
+/* Contenedor Principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Centra los elementos horizontalmente */
+    width: 100%;
+    gap: 20px;              /* Espacio vertical entre la card y el aside */
+}
+
+/* El Aside que contiene el link */
+.tp-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra el botón dentro del aside */
+}
+
+/* Estilo del botón (Link mejorado) */
+.btn-tp {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ef5350;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.btn-tp:hover {
+    background-color: #d32f2f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.search-card {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #444c56;
+    border-radius: 6px;
+    background-color: #22272e;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+button {
+    padding: 0 20px;
+    background-color: var(--accent-color);
+    color: #1a1f24;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: var(--accent-hover);
+}
+
+.loader {
+    text-align: center;
+    color: #8b949e;
+    margin: 1rem 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.resultado-container {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.resultado-container img {
+    width: 150px;
+    height: 150px;
+    background-color: #22272e;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.resultado-container h3 {
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.error {
+    color: var(--error-color);
+    background-color: rgba(255, 107, 107, 0.1);
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* Estilo para el botón del Trabajo Práctico */
+.btn-tp {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ef5350; /* Un rojo tipo Pokébola o Alerta */
+    color: white;
+    text-decoration: none; /* Quitamos el subrayado feo */
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto al pasar el mouse (Hover) */
+.btn-tp:hover {
+    background-color: #d32f2f;
+    transform: translateY(-2px); /* Pequeño salto hacia arriba */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto al hacer click */
+.btn-tp:active {
+    transform: translateY(0);
+}
+
+aside {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nombre{
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}

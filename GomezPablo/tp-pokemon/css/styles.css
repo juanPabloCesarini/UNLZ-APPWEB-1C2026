@@ -1,0 +1,198 @@
+* {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0B284B;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.title {
+    color: #FF1616;
+    margin: 0;
+    padding: 0;
+    font-size: 70px;
+
+}
+
+.subtitle {
+    color: floralwhite;
+    text-align: center;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.labelQuery {
+    color: floralwhite;
+    ;
+}
+
+.inputQuery {
+    border: 2px solid #FF1616;
+    padding: 5px;
+    height: 40px;
+    font-size: 16px;
+    color: #FF1616;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+}
+
+.inputQuery:focus {
+    outline: none;
+    border-color: #FF1616;
+    box-shadow: 0px 0px 5px #FF1616;
+}
+
+.btn {
+    padding: 2px 10px;
+    background-color: #FF1616;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: white;
+    transition: all 0.3s ease;
+    color: #FF1616;
+    
+    box-shadow: 0px 0px 15px #FF1616;
+    cursor: pointer;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: aliceblue;
+    width: 300px;
+
+    margin-top: 20px;
+    border-radius: 15px;
+
+    border-color: #FF1616;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 0px 0px 10px #FF1616;
+
+}
+
+.card-title {
+    color: #FF1616;
+    font-size: 24px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    border-top: solid 3px #FF1616;
+
+    background-color: #FF1616;
+    width: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.card-info>li {
+    list-style: none;
+    color: white
+}
+
+.card-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.error-message {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-img {
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: solid 3px white;
+}
+
+.card-img>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/* Loader extraído de https://css-loaders.com/spinner/ */
+.loader {
+    margin-top: 25px;
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background:
+        radial-gradient(farthest-side, #FF1616 94%, #0000) top/8px 8px no-repeat,
+        conic-gradient(#0000 30%, #FF1616);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+    animation: l13 1s infinite linear;
+}
+
+@keyframes l13 {
+    100% {
+        transform: rotate(1turn)
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.title-container > img {
+    margin-bottom: -30px;
+}
