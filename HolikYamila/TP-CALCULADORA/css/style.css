@@ -61,6 +61,10 @@ body{
     background-color: var(--btn-hover);
 }
 
+#calculator{
+    flex:1;
+}
+
 #card-result{
     flex:2;
     text-align: center;
@@ -87,9 +91,6 @@ body{
     border-width: 5px;
 }
 
-.footer{
-    flex-grow: 0;
-}
 
 .container-footer{
     background-color: var(--border-green);
