@@ -1,0 +1,7 @@
+Armar Calculadora en PHP
+
+1) Mejorar ux/ui con bootstrap y estilos propios???
+2) Trabajar el Controlador
+3) Recuerden Renombrar carpeta
+4) Entrega en main jueves 30/4 19 hs
+5) Clean Code - Clean Arq
