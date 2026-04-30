@@ -8,14 +8,13 @@ include_once 'view_calculadora.php';
 ?>
 
 
-<div class="card">
-    <div class="card-header">
-        <h3>
-           <?php echo "La " . $opMsg . " entre " . $num1 . " y " . $num2 . " es: " . $result?>
-         </h3>
+<div id="card-result" class="row m-0 w-100 justify-content-center">
+    <div id="card-success" class="col-9 col-md-6">
+        <p class="p-3">
+           <?php echo "El resultado de la " . $opMsg . " entre " . $num1 . " y " . $num2 . " es: " . $result?>
+</p>
     </div>
 </div>
-
 
 
 <?php include_once '../view/layout/footer.php' ?>
