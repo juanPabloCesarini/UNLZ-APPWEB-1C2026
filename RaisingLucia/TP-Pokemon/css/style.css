@@ -1,0 +1,119 @@
+:root {
+    --pokemon-yellow: #ffffff;
+    --pokemon-blue: #245eff;
+    --pokemon-red: #ff0d00;
+    --bg-light: #f5f7fa;
+    --white: #ffffff;
+    --gray: #555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main {
+    background-color: var(--white);
+    width: 420px;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+    text-align: center;
+    border: 3px solid var(--pokemon-yellow);
+}
+
+h1 {
+    color: var(--pokemon-blue);
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    height: 42px;
+    padding: 10px;
+    border: 2px solid var(--pokemon-blue);
+    border-radius: 10px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--pokemon-yellow);
+}
+
+button {
+    width: 100%;
+    background-color: var(--pokemon-red);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e12d22;
+}
+
+.loader {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.pokemon-display {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.pokemon-display img {
+    width: 160px;
+    height: 160px;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    padding: 10px;
+    border: 3px solid var(--pokemon-yellow);
+}
+
+.pokemon-display h3 {
+    margin-top: 15px;
+    color: var(--pokemon-blue);
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.error {
+    margin-top: 20px;
+    background-color: #f35555;
+    color: #e40000;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+}

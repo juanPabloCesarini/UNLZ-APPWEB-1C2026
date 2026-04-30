@@ -1,54 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>TP Pokemon</title>
-<style>
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100vh;
-    margin: 0;
-    background-color: #ffffff;
-    padding-top: 150px; 
-  }
-
-  h1 {
-    color: rgb(243, 1, 1); 
-  }
-
-  input {
-    padding: 8px;
-    margin: 10px;
-  }
-
-  button {
-    padding: 8px 12px;
-    cursor: pointer;
-    background-color: blue; 
-    color: white; 
-    border: none;
-    border-radius: 5px;
-  }
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Pokemon</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-
 <body>
+    <main>
 
-  <h1>Buscador Pokemon</h1>
+        <h1>PokeBuscador</h1>
+        <p>Escribí el nombre de un Pokemon</p>
 
-  <input type="text" id="busqueda" placeholder="Ej: pikachu">
-  <button id="btnBuscar">Buscar</button>
+        <input 
+            type="text" 
+            id="busqueda" 
+            placeholder="Ej: Pikachu, Charmander..."
+        >
 
-  <div id="loader" style="display:none;">Cargando...</div>
+        <button id="btnBuscar">Buscar</button>
 
-  <div id="resultado"></div>
+        <div id="loader" class="loader hidden">Cargando...</div>
 
-  <script type="module" src="./js/main.js"></script>
+        <div id="resultado"></div>
 
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>

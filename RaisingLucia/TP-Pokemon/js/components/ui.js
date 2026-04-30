@@ -1,26 +1,44 @@
+let timeoutId;
+
+const limpiar = (contenedor) => {
+  clearTimeout(timeoutId);
+  timeoutId = setTimeout(() => {
+    contenedor.innerHTML = "";
+  }, 5000); // 
+};
+
 export const renderPokemon = (data) => {
   const contenedor = document.querySelector("#resultado");
 
   contenedor.innerHTML = `
-    <img src="${data.sprites.front_default}" alt="${data.name}">
-    <h3>${data.name.toUpperCase()}</h3>
+    <div class="pokemon-display">
+        <img src="${data.sprites.front_default}" alt="${data.name}">
+        <h3>${data.name}</h3>
+    </div>
   `;
 
-
-  setTimeout(() => {
-    contenedor.innerHTML = "";
-  }, 5000);
+  limpiar(contenedor);
 };
 
 export const renderError = (mensaje) => {
   const contenedor = document.querySelector("#resultado");
 
   contenedor.innerHTML = `
-    <p style="color:red;"> ${mensaje}</p>
+    <div class="error">
+        ${mensaje}
+    </div>
   `;
+
+  limpiar(contenedor);
 };
 
 export const toggleLoader = (visible) => {
   const loader = document.querySelector("#loader");
-  loader.style.display = visible ? "block" : "none";
+
+ if (visible) {
+  loader.classList.remove("hidden");
+} else {
+  loader.classList.add("hidden");
+}
+
 };
