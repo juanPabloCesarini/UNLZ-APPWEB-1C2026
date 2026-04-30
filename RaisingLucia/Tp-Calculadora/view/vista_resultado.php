@@ -9,7 +9,7 @@
             <?php echo $resultado; ?>
         </h1>
 
-        <a href="/RaisingLucia/Tp-Calculadora/index.php" class="btn btn-primary mt-4">
+       <a href="../index.php" class="btn btn-primary mt-4">
             Volver
         </a>
 
