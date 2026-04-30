@@ -1,0 +1,40 @@
+body {
+    background-color: #f8dff8;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    width: 400px;
+    margin: auto;
+    border-radius: 15px;
+    border: none;
+    padding: 20px;
+}
+
+h2 {
+    color: #5a189a;
+    font-weight: bold;
+}
+
+h1 {
+    color: #3c096c;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #7b2cbf;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #9d4edd;
+}
+
+.form-control,
+.form-select {
+    border-radius: 10px;
+}
+
+label {
+    font-weight: 600;
+}

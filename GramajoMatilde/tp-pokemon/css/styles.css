@@ -1,0 +1,66 @@
+:root {
+    --bg-pokemon: #f7aef8ff;
+    --hover: #b388ebff;
+    --sky-blue-light: #72ddf7ff;
+    --bg-color: #FDC5F5;
+    --bg-button: #8093F1;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: var(--bg-button);
+    border: 0;
+    padding: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--hover);
+}
+
+input {
+    height: 24px;
+}
+
+.loader {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.pokemon-display {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.pokemon-display img {
+    width: 150px;
+    height: 150px;
+    background-color: var(--bg-pokemon);
+    border-radius: 50%;
+}
+
+.pokemon-display h3 {
+    margin-top: 12px;
+}
+
+.error {
+    background-color: var(--bg-pokemon);
+    padding: 10px;
+    border-radius: 6px;
+    display: inline-block;
+}

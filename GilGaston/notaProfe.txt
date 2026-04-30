@@ -1,0 +1,2 @@
+Gastón la consigna está cumplida, lo unico es que no hubo un buen manejo de tiempos en los mensajes de error.
+La nota es 8

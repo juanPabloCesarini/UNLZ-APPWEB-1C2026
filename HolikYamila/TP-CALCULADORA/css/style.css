@@ -1,0 +1,104 @@
+:root{
+    --bg-light: #D9EAD3;
+    --border-green: #93C47D;
+    --btn-dark: #2D6A4F;
+    --btn-hover: #40916C;
+    --text-header: #1B4332;
+    --input-bg: #F1F8E9;
+
+    --success-bg: #b9e4c8;
+    --success-border: #55b685;
+    --success-text: #1b4332;
+
+    --error-bg: #f8d7da;
+    --error-border: #e57883;
+    --error-text: #842029;
+
+    --border-radio-general: 15px;
+    --header-font: "Jersey 25", sans-serif;
+
+}
+
+.jersey-25-regular {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--bg-light);
+    color: var(--text-header);
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+}
+
+#app h1{
+    font-family: var(--header-font);
+    font-size: 2rem;
+}
+
+#input-number input{
+    border-color: var(--border-green);
+    background-color: var(--input-bg);
+}
+
+#button-op-form button{
+    padding: 10px;
+    border-radius: var(--border-radio-general);
+    background-color: var(--btn-dark);
+    color: var(--bg-light);
+    font-weight: bold;
+}
+
+#button-op-form button:hover{
+    background-color: var(--btn-hover);
+}
+
+#calculator{
+    flex:1;
+}
+
+#card-result{
+    flex:2;
+    text-align: center;
+    font-weight: bolder;
+    /*width: 75%;
+    */
+}
+
+
+#card-error p{
+    color: var(--error-text);
+    background-color: var(--error-bg);
+    border-style: solid;
+    border-color: var(--error-border);
+    border-radius: var(--border-radio-general);
+}
+
+#card-success p{
+    color: var(--success-text);
+    background-color: var(--success-bg);
+    border-style: solid;
+    border-color: var(--success-border);
+    border-radius: var(--border-radio-general);
+    border-width: 5px;
+}
+
+
+.container-footer{
+    background-color: var(--border-green);
+}
+
+.container-footer p{
+    padding: 10px;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}

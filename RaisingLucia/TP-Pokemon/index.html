@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Pokemon</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+
+        <h1>PokeBuscador</h1>
+        <p>Escribí el nombre de un Pokemon</p>
+
+        <input 
+            type="text" 
+            id="busqueda" 
+            placeholder="Ej: Pikachu, Charmander..."
+        >
+
+        <button id="btnBuscar">Buscar</button>
+
+        <div id="loader" class="loader hidden">Cargando...</div>
+
+        <div id="resultado"></div>
+
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
