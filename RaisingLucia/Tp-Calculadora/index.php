@@ -4,7 +4,8 @@
     <div class="card p-4 shadow">
         <h2 class="text-center mb-4">Calculadora PHP</h2>
 
-        <form action="/RaisingLucia/Tp-Calculadora/controller/calcular.php" method="POST">
+        
+        <form action="/UNLZ-APPWEB-1C2026/RaisingLucia/Tp-Calculadora/controller/calcular.php" method="POST">
 
             <div class="mb-3">
                 <label class="form-label">Primer número</label>
