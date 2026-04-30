@@ -1,44 +1,40 @@
 import { fetchPokemon } from "./services/pokemon.js";
 import { renderPokemon, renderError, toggleLoader } from "./components/ui.js";
 
-
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 const btn = document.querySelector("#btnBuscar");
 const input = document.querySelector("#busqueda");
+const resultado = document.querySelector("#resultado");
 
 btn.addEventListener("click", async () => {
-  const query = input.value.trim().toLowerCase();
+    const query = input.value.trim().toLowerCase();
 
+    if (!query) {
+        renderError("Por favor, escribi el nombre de un Pokemon");
+        return;
+    }
 
-  if (!query) {
-    renderError("Escribe un Pokemon");
+    if (!isNaN(query)) {
+        renderError("Ingrese un nombre válido");
+        return;
+    }
 
-    setTimeout(() => {
-      document.querySelector("#resultado").innerHTML = "";
-    }, 5000);
+    toggleLoader(true);
+    resultado.innerHTML = "";
 
-    return;
-  }
+    try {
+        const [data] = await Promise.all([
+            fetchPokemon(query),
+            delay(1000)
+        ]);
 
-  toggleLoader(true);
+        renderPokemon(data);
 
-  try {
-    
-    await delay(2000);
+    } catch (error) {
+        renderError("No se encontró el Pokemon. Intente nuevamente");
 
-    const data = await fetchPokemon(query);
-    renderPokemon(data);
-
-  } catch (error) {
-    renderError(error.message);
-
-
-    setTimeout(() => {
-      document.querySelector("#resultado").innerHTML = "";
-    }, 5000);
-
-  } finally {
-    toggleLoader(false);
-  }
+    } finally {
+        toggleLoader(false);
+    }
 });
