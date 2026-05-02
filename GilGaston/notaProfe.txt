@@ -1,2 +1,8 @@
 Gastón la consigna está cumplida, lo unico es que no hubo un buen manejo de tiempos en los mensajes de error.
 La nota es 8
+
+Gastón tenes error al dividir por 0, eso lo tenias que contemplar
+
+Fatal error: Uncaught DivisionByZeroError: Division by zero in C:\xampp\htdocs\UNLZ-APPWEB-1C2026\GilGaston\tp-calculadora\Controller\dividir.php:6 Stack trace: #0 C:\xampp\htdocs\UNLZ-APPWEB-1C2026\GilGaston\tp-calculadora\Controller\orquestador.php(18): require_once() #1 {main} thrown in C:\xampp\htdocs\UNLZ-APPWEB-1C2026\GilGaston\tp-calculadora\Controller\dividir.php on line 6
+
+La nota es 6

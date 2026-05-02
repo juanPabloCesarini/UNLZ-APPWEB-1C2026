@@ -5,3 +5,7 @@ main.js:27 Uncaught TypeError: Cannot read properties of null (reading 'addEvent
 (anonymous) @ main.js:27
 
 La nota es 2
+
+Sergio el recuperatorio de pokemon faltan ajustes pero se valora el trabajo y el progreso la nota es 7
+
+En cuanto a la calculadora muy bien la nota es 10

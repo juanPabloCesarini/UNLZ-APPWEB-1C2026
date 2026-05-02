@@ -3,3 +3,7 @@ Manu, si bien el codigo llegó no lo puedo probar, en la vida real (el cliente d
 Tampoco renombraste la carpeta como pedía el TP.
 
 La nota es 2, ya te voy a explicar como recuperar
+
+Manu excelente trabajo tu nota del tp CALCULADORA es 10
+
+El recuperatorio de pokemon es un 9, te quedó un alert fulera cuando el pokemon no existe
