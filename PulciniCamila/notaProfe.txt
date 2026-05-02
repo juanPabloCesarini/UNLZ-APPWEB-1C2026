@@ -1,3 +1,7 @@
 Camila si bien el código llegó, no se pudo probar
 
 La nota es 2
+
+TP POKEMON recuperado nota 10
+
+TP CALCULADORA, nota 10, aunque a mi gusto le falto garra a los estilos

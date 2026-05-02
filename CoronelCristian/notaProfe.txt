@@ -1,3 +1,9 @@
 Cristian el trabajo esta cumplido, la única mejora sería cambiar la alerta por el espacio reservado a los errores.
 
 La nota es 10
+
+Cristian al tp de la calculadora le falto garra en los estilos y te copio el error que tira al dividir por 0
+
+Fatal error: Uncaught DivisionByZeroError: Division by zero in C:\xampp\htdocs\UNLZ-APPWEB-1C2026\CoronelCristian\tp-calculadora\Controller\calcular.php:22 Stack trace: #0 {main} thrown in C:\xampp\htdocs\UNLZ-APPWEB-1C2026\CoronelCristian\tp-calculadora\Controller\calcular.php on line 22
+
+La nota en este tp es 6

@@ -1,0 +1,11 @@
+Nerea, si bien el código está pero no se puede probar, tampoco tenes renombrada la carpeta como se solicitó en el tp.
+
+La nota es 2
+
+Te falto una mejor UX/UI en el tp de pokemon, tanto en estilos (botón muy chico) y hubo problemas con los setTimeOut, el error no desaparece.
+
+La nota es 6
+
+El tp de la calculadora está ok, aunque también faltó garra en los estilos, 
+
+La nota es 10
